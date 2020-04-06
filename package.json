@@ -1,12 +1,21 @@
 {
   "name": "react-boilerplate",
   "version": "0.1.0",
-	"private": false,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -18,8 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint .",
-    "lint:fix": "eslint ./src/**/*.jsx --fix",
+    "lint": "eslint --ext .js,.jsx src  --ignore-pattern *.stories.jsx src",
+    "lint:fix": "eslint  --fix --ext .js,.jsx src --ignore-pattern *.stories.jsx src",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
@@ -47,15 +56,25 @@
     "react-styleguidist": "^11.0.5",
     "storybook": "^5.3.18",
     "themeprovider-storybook": "^1.4.0"
-	},
-	"keywords": ["react", "web", "boilerplate", "react structure"],
-	"author": "Lucas Amaral",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/lucasAmarall/react-boilerplate.git"
-	},
-	"bugs": {
-		"url": "https://github.com/lucasAmarall/react-boilerplate.git/issues"
-	},
-	"homepage": "https://github.com/lucasAmarall/react-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "web",
+    "boilerplate",
+    "react structure"
+  ],
+  "author": "Lucas Amaral",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasAmarall/react-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasAmarall/react-boilerplate.git/issues"
+  },
+  "homepage": "https://github.com/lucasAmarall/react-boilerplate.git",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix"
+    }
+  }
 }
