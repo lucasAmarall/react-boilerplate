@@ -1,23 +1,28 @@
 {
-  "name": "boilerplate",
+  "name": "react-boilerplate",
   "version": "0.1.0",
-  "private": true,
+	"private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.1",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "lint": "eslint .",
+    "lint:fix": "eslint ./src/**/*.jsx --fix",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -26,9 +31,31 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-create-react-app": "^2.1.1",
+    "@storybook/react": "^5.3.18",
+    "eslint": "^6.8.0",
+    "prettier": "2.0.3",
+    "react-styleguidist": "^11.0.5",
+    "storybook": "^5.3.18",
+    "themeprovider-storybook": "^1.4.0"
+	},
+	"keywords": ["react", "web", "boilerplate", "react structure"],
+	"author": "Lucas Amaral",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lucasAmarall/react-boilerplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lucasAmarall/react-boilerplate.git/issues"
+	},
+	"homepage": "https://github.com/lucasAmarall/react-boilerplate.git"
 }
