@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "react-boilerplate",
   "version": "0.1.0",
-  "private": true,
+	"private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -47,5 +47,15 @@
     "react-styleguidist": "^11.0.5",
     "storybook": "^5.3.18",
     "themeprovider-storybook": "^1.4.0"
-  }
+	},
+	"keywords": ["react", "web", "boilerplate", "react structure"],
+	"author": "Lucas Amaral",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lucasAmarall/react-boilerplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lucasAmarall/react-boilerplate.git/issues"
+	},
+	"homepage": "https://github.com/lucasAmarall/react-boilerplate.git"
 }
