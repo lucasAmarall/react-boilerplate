@@ -31,7 +31,8 @@
     "lint:fix": "eslint  --fix --ext .js,.jsx src --ignore-pattern *.stories.jsx src",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+		"build-storybook": "build-storybook -s public",
+		"commit": "git-cz"
   },
   "browserslist": {
     "production": [
@@ -51,6 +52,8 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.8.0",
     "prettier": "2.0.3",
     "react-styleguidist": "^11.0.5",
@@ -75,6 +78,11 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint:fix"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   }
 }
