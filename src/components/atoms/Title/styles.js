@@ -7,6 +7,6 @@ const sizes = {
 };
 
 export const H1 = styled.h1`
-  color: ${({theme}) => theme.colors.primary};
+  color: ${({theme}) => theme.colors.primaryText};
 	font-size: ${({size}) => sizes[size]}
 `;
