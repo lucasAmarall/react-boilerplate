@@ -19,10 +19,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "eject": "react-scripts eject"
+    "lint:fix": "eslint ./src/**/*.jsx --fix",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -37,8 +37,15 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-create-react-app": "^2.1.1",
+    "@storybook/react": "^5.3.18",
     "eslint": "^6.8.0",
     "prettier": "2.0.3",
-    "react-styleguidist": "^11.0.5"
+    "react-styleguidist": "^11.0.5",
+    "storybook": "^5.3.18",
+    "themeprovider-storybook": "^1.4.0"
   }
 }
