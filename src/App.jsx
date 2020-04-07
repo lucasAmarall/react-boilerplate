@@ -1,7 +1,7 @@
 import React from "react";
 import {  ThemeProvider } from "styled-components";
 import * as colors from "./constants/colors";
-import Home from "./components/pages/Home/index";
+import Router from "./router";
 import "./sass/main.sass";
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
 
   return(
     <ThemeProvider theme={styleSettings}>
-      <Home />
+      <Router />
     </ThemeProvider>
   );
 };

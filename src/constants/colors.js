@@ -3,6 +3,7 @@ export const light = {
   primaryText: "#000",
   white: "#fff",
   black: "#000",
+  loadingBackground: "#000925e3"
 };
 
 export const dark = {
@@ -10,4 +11,5 @@ export const dark = {
   primaryText: "#fff",
   white: "#fff",
   black: "#000",
+  loadingBackground: "#000925e3"
 };
