@@ -20,6 +20,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
     "styled-components": "^5.0.1"
   },
@@ -31,8 +32,8 @@
     "lint:fix": "eslint  --fix --ext .js,.jsx src --ignore-pattern *.stories.jsx src",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-		"build-storybook": "build-storybook -s public",
-		"commit": "git-cz"
+    "build-storybook": "build-storybook -s public",
+    "commit": "git-cz"
   },
   "browserslist": {
     "production": [
