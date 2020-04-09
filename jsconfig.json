@@ -10,7 +10,7 @@
 			"@molecules/*": ["./src/components/molecules/*"],
 			"@organisms/*": ["./src/components/organisms/*"],
 			"@pages/*": ["./src/components/pages/*"],
-			"@components/*": ["./src/components/*"], // folders inside components
+			"@components/*": ["./src/components/*"],
 			"@assets/*": ["./src/assets/*"],
 			"@api/*": ["./src/api/*"],
 			"@utils/*": ["./src/utils/*"],
@@ -18,9 +18,9 @@
 			"@services/*": ["./src/api/services/*"],
 			"@context/*": ["./src/context/*"],
 			"@src/*": ["./src/*"],
-			"@~/*": ["./*"],
+			"@~/*": ["./*"]
     }
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "public/locales"]
 }
