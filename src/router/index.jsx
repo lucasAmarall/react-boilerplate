@@ -4,8 +4,8 @@ import {
   Route
 } from "react-router-dom";
 
-import About from "../components/pages/About";
-import Home from "../components/pages/Home";
+import About from "@pages/About";
+import Home from "@pages/Home";
 
 const RouterContainer = () => {
   return(

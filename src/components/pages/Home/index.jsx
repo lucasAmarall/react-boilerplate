@@ -1,6 +1,6 @@
 import React from "react";
+import Logo from "@assets/images/logo.svg";
 import { Container, Img } from "./style";
-import Logo from "../../../assets/images/logo.svg";
 
 const Home = () => {
   return (
