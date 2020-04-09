@@ -41,5 +41,6 @@ Starts the storybook server
 - #### npm run build-storybook
 Generate the build version of storybook
 
-##Project structure
+## Project structure
+
 ![ScreenShot](https://raw.githubusercontent.com/lucasAmarall/react-boilerplate/update/readme/docs/Group.png)
