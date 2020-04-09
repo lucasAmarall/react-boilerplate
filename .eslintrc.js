@@ -73,11 +73,12 @@ module.exports = {
 		"react/self-closing-comp": "error", //Prevent extra closing tags for components without children (fixable)
 		"react/jsx-filename-extension": [1, { "extensions": [".js",".jsx"] }], // Restrict file extensions that may contain JSX (react/jsx-filename-extension)
 		"react/jsx-key": "error", // Detect missing key prop (react/jsx-key)
+		"import/no-unresolved": "off" // TODO temporary solution
 	},
 	"settings": {
-    "react": {
-      "pragma": "React",  // Pragma to use, default to "React"
-      "version": "detect", // React version. "detect" automatically picks the version you have installed.
-    },
+		"react": {
+			"pragma": "React",  // Pragma to use, default to "React"
+			"version": "detect", // React version. "detect" automatically picks the version you have installed.
+		},
   }
 };

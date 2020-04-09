@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+			"@atoms/*": ["./src/components/atoms/*"],
+			"@molecules/*": ["./src/components/molecules/*"],
+			"@organisms/*": ["./src/components/organisms/*"],
+			"@pages/*": ["./src/components/pages/*"],
+			"@components/*": ["./src/components/*"], // folders inside components
+			"@assets/*": ["./src/assets/*"],
+			"@api/*": ["./src/api/*"],
+			"@utils/*": ["./src/utils/*"],
+			"@constants/*": ["./src/constants/*"],
+			"@services/*": ["./src/api/services/*"],
+			"@context/*": ["./src/context/*"],
+			"@src/*": ["./src/*"],
+			"@~/*": ["./*"],
+    }
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*"]
+}
