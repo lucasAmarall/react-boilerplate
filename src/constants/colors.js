@@ -6,4 +6,4 @@ export const light = {
   loadingBackground: "#000925e3"
 };
 
-export const dark = light
+export const dark = light;
